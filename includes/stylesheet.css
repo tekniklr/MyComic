@@ -1,0 +1,58 @@
+<!--
+
+	BODY {
+		font-family: Helvetica, Arial, sans-serif;
+		color: #000000
+	}
+
+	A:link {
+		color: #cc0033;
+	}
+
+	A:visited {
+		color: #cc0033;
+	}
+
+	A:active {
+		color: #FF0000;
+	}
+
+	A.change:hover {
+		color: #EEEEEE;
+		background-color:       #6633CC;
+		-moz-border-radius:     5px;
+	}
+
+	font.title {
+		font-style: italic;
+		font-weight: bold;
+		font-size: 110%;
+		padding: 1%
+	}
+
+	.tint {
+	}
+
+        img.art {
+                border: 2px solid; 
+                -moz-border-radius: 5px
+        }
+
+        A:link.art {
+                color: #BBBBBB
+        }
+
+        A:visited.art {
+                color: #BBBBBB
+        }
+
+        A:hover.art {
+                color: #DDDDDD
+        }
+
+        i.date {
+                color: #00cc00
+        }
+
+
+-->

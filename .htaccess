@@ -1,0 +1,4 @@
+# Set up PHP stuff
+<IfModule mod_php4.c>
+   php_value include_path ".:/path/to/MyComic/includes"
+</IfModule>
