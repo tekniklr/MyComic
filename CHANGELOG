@@ -1,0 +1,44 @@
+Version 1.0.2 - 20110606
+-------------
+	* Updated README and cleaned up defaults a bit for github.
+
+Version 1.0.1 - 20081220
+-------------
+	* Changed include paths to be relative so that they work without modifying the PHP config.
+	* Replaced all linked index files with empty ones to still accoplish keeping people from browsing the directory structure while still working with relative include paths.
+	* Updated README
+
+Version 1.0.0 - 20070826
+-------------
+	* Changed all instances of HTTP_POST_VARS, HTTP_GET_VARS, and HTTP_POST_FILES to their current incarnations.
+	* Added title configuration variable.
+	* Added RSS feed for comics.
+	* Renamed include files to have the 'comic_' prefix.
+	* Updated contact information.
+
+Version 0.9.2 - 20040401
+-------------
+	* Changed name to avoid conflicitng with other projects
+	* Added branding to default footer
+	* Added a description of what BBcode is allowed, and what it does
+	* Tidied the admin page code a little, but it still needs a lot of work
+
+Version 0.9.1 - 20031216
+-------------
+	* Put the admin part in it's own directory and authenticate with .htaccess so that it will work on all PHP/Apache setups.
+	* Added information in the README on how to install where phpsuexec is present.
+
+Version 0.9 - 20030927
+-----------
+	* Made default settings valid XHTML
+	* Made intro rant optional, with some variables to control it at the top of rant.php
+
+
+Version 0.8.1 - 20030911
+-------------
+	* Fixed some bugs and tidied the organization a bit
+
+Version 0.8 - 20030826
+-----------
+	* Initial public release
+	  (Though I've been using it for about a year now)

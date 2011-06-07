@@ -1,0 +1,50 @@
+BACKGROUND INFO
+-------------------------------------
+Originally written back in 2002, this was designed as the backend for
+three separate webcomics run by friends (‘Megadome All-Stars’, ‘Into the
+Black’, and ‘The Misadventures of Magus and Mog’) on a webhost which did
+not provide a database. However, as is often the case with such things,
+all three of those webcomics eventually ceased to be.
+
+After about a year, I decided it was time to clean up the code a (little)
+bit, fix some bugs, and make it available to the Internet at large. It’s
+still rough around the edges, but I think it does a pretty nice job of
+administering a webcomic without needing a database. Not really very
+configurable at all, unless you know PHP- but some people may find it
+useful, nonetheless.
+
+I believe that there are now more robust alternatives to this available,
+but I am not familiar with any of them. You should probably shop around a
+bit before settling on this program, but it is possible that it will still
+suit your needs.
+
+
+KNOWN ISSUES
+-------------------------------------
+* It uses extremely weak HTTP authentication. Do not administer over WiFi.
+
+
+INSTALLATION INSTRUCTIONS
+-------------------------------------
+First off, I hope you have PHP >= 4.0.5 and Apache running, otherwise I
+probably won't be able to help you if you can't get it working.
+
+1. Upload files to web directory, set permissions, ensuring the following
+	files/folders are writable to by the user your web server runs as.
+		archives
+		gallery
+		gallery/gallery.txt
+		rant
+2. Edit the config file (includes/comic_config.php) to match your setup
+	A. Set the paths- $home, $path, and $comic_dir
+	B. Pick a umask that works
+	C. Add real users, as opposed to the default ones
+3. Set up your .htpasswd file:
+	htpasswd .htpasswd user1 (for each user)
+4. Set up an .htaccess file in the admin directory to point to the
+	.htpasswd file you just made.
+6. Install avatars as <username>.<gif|jpg|png|...> into images/avatars
+7. Configure files (mainly header.php and footer.php, but the individual
+	content files as well) to display the way you want them to.  Edit
+	the included stylesheet as desired.
+8. Start uploading comics, and play around with it  :)

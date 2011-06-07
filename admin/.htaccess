@@ -1,0 +1,9 @@
+
+AuthType Basic
+
+AuthName "MyComic admin"
+
+AuthUserFile /path/to/MyComic/admin/.htpasswd
+
+
+require valid-user
